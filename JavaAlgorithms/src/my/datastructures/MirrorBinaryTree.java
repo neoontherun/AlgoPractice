@@ -5,20 +5,20 @@ package my.datastructures;
    node and key value*/
 
 public class MirrorBinaryTree {
-	Node root;
+	BTNode root;
 
 	void mirror() {
 		root = mirror(root);
 	}
 
-	Node mirror(Node node) {
+	BTNode mirror(BTNode node) {
 		if (node == null) {
 			return node;
 		}
 
 		/* do the subtrees */
-		Node left = mirror(node.left);
-		Node right = mirror(node.right);
+		BTNode left = mirror(node.left);
+		BTNode right = mirror(node.right);
 
 		/* swap the left and right pointers */
 		node.left = right;
@@ -35,7 +35,7 @@ public class MirrorBinaryTree {
 	 * Helper function to test mirror(). Given a binary search tree, print out
 	 * its data elements in increasing sorted order.
 	 */
-	void inOrder(Node node) {
+	void inOrder(BTNode node) {
 		if (node == null) {
 			return;
 		}
@@ -48,11 +48,11 @@ public class MirrorBinaryTree {
 	public static void main(String args[]) {
 		/* creating a binary tree and entering the nodes */
 		MirrorBinaryTree tree = new MirrorBinaryTree();
-		tree.root = new Node(1);
-		tree.root.left = new Node(2);
-		tree.root.right = new Node(3);
-		tree.root.left.left = new Node(4);
-		tree.root.left.right = new Node(5);
+		tree.root = new BTNode(1);
+		tree.root.left = new BTNode(2);
+		tree.root.right = new BTNode(3);
+		tree.root.left.left = new BTNode(4);
+		tree.root.left.right = new BTNode(5);
 
 		/* print inorder traversal of the input tree */
 		System.out.println("Inorder traversal of input tree is :");

@@ -10,9 +10,6 @@ public class LinkedList {
 			this.data = data;
 		}
 
-		public void setNextNode(Node next) {
-			this.next = next;
-		}
 	}
 
 	Node header;

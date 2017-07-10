@@ -5,11 +5,11 @@ package my.datastructures;
 
 /* Class containing left and right child of current
  node and key value*/
-class Node {
+class BTNode {
 	int data;
-	Node left, right;
+	BTNode left, right;
 
-	public Node(int item) {
+	public BTNode(int item) {
 		data = item;
 		left = right = null;
 	}
@@ -17,7 +17,7 @@ class Node {
 
 public class IsBinaryTree {
 	// Root of the Binary Tree
-	Node root;
+	BTNode root;
 
 	/*
 	 * can give min and max value according to your code or can write a function
@@ -36,7 +36,7 @@ public class IsBinaryTree {
 	 * Returns true if the given tree is a BST and its values are >= min and <=
 	 * max.
 	 */
-	boolean isBSTUtil(Node node, int min, int max) {
+	boolean isBSTUtil(BTNode node, int min, int max) {
 		System.out.println("Min : " + min + " Max : " + max);
 		/* an empty tree is BST */
 		if (node == null) {
@@ -60,14 +60,14 @@ public class IsBinaryTree {
 	/* Driver program to test above functions */
 	public static void main(String args[]) {
 		IsBinaryTree tree = new IsBinaryTree();
-		tree.root = new Node(4);
-		tree.root.left = new Node(2);
-		tree.root.right = new Node(5);
-		tree.root.left.left = new Node(1);
-		tree.root.left.right = new Node(3);
+		tree.root = new BTNode(4);
+		tree.root.left = new BTNode(2);
+		tree.root.right = new BTNode(5);
+		tree.root.left.left = new BTNode(1);
+		tree.root.left.right = new BTNode(3);
 		
-		tree.root.right.left = new Node(3);
-		tree.root.right.right = new Node(6);
+		tree.root.right.left = new BTNode(3);
+		tree.root.right.right = new BTNode(6);
 
 		if (tree.isBST()) {
 			System.out.println("IS BST");
