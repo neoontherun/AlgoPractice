@@ -1,5 +1,7 @@
 package my.problemsolving;
 
+import java.util.Arrays;
+
 public class StringOperations {
 
 	public static String reverseUsingBuiltin(String input) {
@@ -117,11 +119,15 @@ public class StringOperations {
 			insertIndex++;
 			i = j;
 		}
+		System.out.println(Arrays.toString(chars));
 		return new String(chars, 0, insertIndex);
 	}
 
 	public static void main(String[] args) {
-		String fullString = "abcdaabbddddccccefeeeee";
-		System.out.println(compressString(fullString));
+		// String fullString = "abcdaabbddddccccefeeeee";
+		// System.out.println(compressString(fullString));
+
+		// printAllPermutation("", "abcd");
+
 	}
 }
