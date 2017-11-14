@@ -1,5 +1,12 @@
 package my.datastructures;
 
+/** the other way to do this is to find the length of both the lists & get the difference of list.
+ * Then need to traverse the longer list till the difference & then start traversing both the list (since now both pointers are at same index)
+ * to find the same intersecting node.
+ * @author kr185104
+ *
+ */
+
 public class FindIntersectingNodeInLinkedList {
 
 	Node header;

@@ -60,14 +60,16 @@ public class IsBinaryTree {
 	/* Driver program to test above functions */
 	public static void main(String args[]) {
 		IsBinaryTree tree = new IsBinaryTree();
-		tree.root = new BTNode(4);
-		tree.root.left = new BTNode(2);
-		tree.root.right = new BTNode(5);
-		tree.root.left.left = new BTNode(1);
-		tree.root.left.right = new BTNode(3);
 		
-		tree.root.right.left = new BTNode(3);
-		tree.root.right.right = new BTNode(6);
+//		tree.root = new BTNode(4);
+//		tree.root.left = new BTNode(2);
+//		tree.root.right = new BTNode(5);
+//		tree.root.left.left = new BTNode(1);
+//		tree.root.right.right = new BTNode(6);
+		
+		tree.root = new BTNode(4);
+		tree.root.left = new BTNode(3);
+		tree.root.left.left = new BTNode(2);
 
 		if (tree.isBST()) {
 			System.out.println("IS BST");
