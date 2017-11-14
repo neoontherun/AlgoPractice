@@ -1,0 +1,14 @@
+Round 1 - Screening
+	1. Design Rest API - what method will you use? URi? resource? PUT v/s PATCH?
+	2. How would you pull records based on sliding time window of 24 hours?
+	3. Table design.
+	4. How does maven work? How is dependency resolved?
+	5. How can you scale from 10000 txn /month to 1 Million Txns / month. Both DB level & App Level.
+	
+Round 2 - 
+	1. Design Soduko
+	2. Write a program to find if the given custom tree is valid or not. Refer CustomTreeIsValid.java
+	
+Round 3 -
+	1. Maximum Sub Array.
+	2. Moving Median in a stream of integers.
