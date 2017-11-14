@@ -26,7 +26,7 @@ public class MyBlockingQueue {
 			if (queue.size() == 0) {
 				queue.wait();
 			}
-			returnObj = queue.remove(queue.size() - 1);
+			returnObj = queue.remove(0);
 			// System.out.println("Queue Size : " + queue.size());
 			queue.notifyAll();
 		}
