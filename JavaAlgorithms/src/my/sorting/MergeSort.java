@@ -60,14 +60,16 @@ class MergeSort {
 
 			// Merge the sorted halves
 			merge(arr, l, m, r);
+			System.out.println("Array after merge : " + Arrays.toString(arr));
 		}
 	}
 
 	// Driver method
 	public static void main(String args[]) {
 		// int arr[] = { 12, 11, 13, 5, 6, 7 };
-//		int arr[] = { 9, 7, 6, 15, 16, 5, 10, 11 };
-		int arr[] = { 5, 6, 7, 9, 10, 11, 15, 16 };
+		// int arr[] = { 9, 7, 6, 15, 16, 5, 10, 11 };
+		// int arr[] = { 5, 6, 7, 9, 10, 11, 15, 16 };
+		int arr[] = { 2, 5, 7, 4, 1, 8, 6, 3 };
 
 		System.out.println("Given Array  : " + Arrays.toString(arr));
 

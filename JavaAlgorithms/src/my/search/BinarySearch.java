@@ -6,7 +6,8 @@ class BinarySearch {
 	int binarySearch(int arr[], int l, int r, int x) {
 		if (r >= l) {
 			int mid = l + (r - l) / 2;
-
+			System.out.println("l = " + l + " r = " + r + " mid = " + mid);
+			
 			// If the element is present at the middle itself
 			if (arr[mid] == x) {
 				return mid;
@@ -14,7 +15,7 @@ class BinarySearch {
 
 			// If element is smaller than mid, then it can only
 			// be present in left subarray
-			if (arr[mid] > x) {
+			if (x < arr[mid]) {
 				return binarySearch(arr, l, mid - 1, x);
 			}
 
@@ -30,9 +31,9 @@ class BinarySearch {
 	// Driver method to test above
 	public static void main(String args[]) {
 		BinarySearch ob = new BinarySearch();
-		int arr[] = { 2, 3, 4, 10, 40 };
+		int arr[] = { 2, 3, 4, 10, 40, 50, 65, 68 };
 		int n = arr.length;
-		int x = 4;
+		int x = 50;
 		int result = ob.binarySearch(arr, 0, n - 1, x);
 		if (result == -1)
 			System.out.println("Element not present");
