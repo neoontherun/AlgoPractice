@@ -1,0 +1,8 @@
+There are only 4 kinds:
+
+Inner join: The most common type. An output row is produced for every pair of input rows that match on the join conditions.
+Left outer join: The same as an inner join, except that if there is any row for which no matching row in the table on the right can be found, 
+                 a row is output containing the values from the table on the left, with NULL for each value in the table on the right. 
+                 This means that every row from the table on the left will appear at least once in the output.
+Right outer join: The same as a left outer join, except with the roles of the tables reversed.
+Full outer join: A combination of left and right outer joins. Every row from both tables will appear in the output at least once.
