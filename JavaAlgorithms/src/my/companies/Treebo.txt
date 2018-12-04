@@ -1,0 +1,4 @@
+
+Round 1. Design & code for elevator. - check project.
+Round 2. Design a highly scalable & available component for booking & pulling the hotel status information. (use of async processing & messaging systems)
+Round 3. Explain twitter concepts & design. How is trending news in twitter listed? (the data points & the algorithm). How does a hashtag work?
