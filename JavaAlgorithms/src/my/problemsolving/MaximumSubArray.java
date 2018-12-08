@@ -14,11 +14,11 @@ public class MaximumSubArray {
 		for (int i = 0; i < a.length; i++) {
 			max_ending_here = max_ending_here + a[i];
 			System.out.println("i = " + i + ", max_ending_here = " + max_ending_here);
-			if (max_so_far < max_ending_here) {
-				max_so_far = max_ending_here;
-			}
 			if (max_ending_here < 0) {
 				max_ending_here = 0;
+			}
+			if (max_so_far < max_ending_here) {
+				max_so_far = max_ending_here;
 			}
 		}
 		return max_so_far;

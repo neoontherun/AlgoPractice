@@ -1,0 +1,6 @@
+1. System Design Question - expected reactive architecture - gave afeedback that will be rejecting based on this.
+	System design for processing a FD maturity job stored in DB.
+2. Java - Immutability.
+3. How to create an immutable object with many fields? Constructor with too many arguments not viable. Use Builder Pattern (Asked for impl - gave almost full impl)
+4. 2 linkedlist merge question - asked only to say whether they are merged or not, not the node so only one sweep & compare the last node ref was sufficient.
+5. 
