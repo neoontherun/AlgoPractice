@@ -9,7 +9,6 @@ package my.problemsolving;
  * 
  * Lets assume the data is Square = 4, Triangle = 3, Circle = 0
  * 
- * @author kr185104
  */
 public class CustomTreeIsValid {
 
