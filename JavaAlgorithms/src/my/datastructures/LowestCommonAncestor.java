@@ -62,5 +62,6 @@ public class LowestCommonAncestor {
 		System.out.println("LCA(4, 6) = " + tree.findLCA(4, 6).data);
 		System.out.println("LCA(3, 4) = " + tree.findLCA(3, 4).data);
 		System.out.println("LCA(2, 4) = " + tree.findLCA(2, 4).data);
+		System.out.println("LCA(8, 9) = " + tree.findLCA(8, 9));
 	}
 }

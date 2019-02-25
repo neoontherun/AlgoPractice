@@ -1,0 +1,27 @@
+PayTM:
+Round 1 : 
+	Design a travel search system. Input is the source & destination & a date. 
+	If a bus goes from A->B->C->D->E, it should get listed in all the searches if user searches for AB, AC, AD, AE, BC, BD, BE, CD, CE, DE.
+	Need to design meta data tables, access tables (from where the search is done) What would be the key to search - came up with - (SRC-DEST-DATEOFTRAVEL) with multiple entries for the same bus even if kind of duplicates to ease the search.
+	For ex: AB-DT1, AC-DT1 & so on.	
+	We continued to discuss on why we need to start using NodeJS & GoLang. Don’t just love your language but also open to new languages. Be ready to learn new things.
+	He offered a new perspective of thinking the use case first & then decide on DS. Not decide DS/Tech & then think how to solve the problem. (Analogy is first decide how to solve search by identifying that a simplified key for fast access is required & then decide on the Map DS).
+	he mentioned it took a week to learn goLang & should be easy for folks coding on c++ or .NET core tech which is more functional in nature but it also supports OO.
+	Talked about golang use of channels in http (tcp) modules.
+
+Round 2:
+	OS / Network Fundamentals.
+	1. Does a while (1) loop without any code occupy processor completely? Does the CPU monitor show 100%? (Yes fro Top command - I answered No). _ related to pre-emptive scheduling. 
+	2. Follow up question, how does other process doesn’t get affected - there is a CPU time slice — follow up again - how will the CPU know? - it is thru interrupts. (He explained stack of IRQ’s)
+	3. What is virtual memory?
+	4. What is difference between semaphore / mutex?
+	5. What is difference between TCP / UDP?
+	6. How does DNS work? Not just concept - but underlying h/w workings.
+	7. What is the difference between switch, router & hub? - I couldn’t answer.
+	8. What is Base64 encoding & why is it required?
+	9. What do you like about javascript & do not like about it?
+	10. Have you worked on cloud based technologies?
+	11. Different parts / components of OS?
+	12. What is CAP theorem. Explain.
+
+	
